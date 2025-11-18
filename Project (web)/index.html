@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý thời gian biểu</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1>
+            <i class="fa-solid fa-calendar-days"></i>
+            Quản lý thời gian biểu
+        </h1>
+        <form id="timetable-form" class="card">
+            <input type="text" id="subject" placeholder="Tên môn học/công việc" required>
+            <input type="date" id="date" required>
+            <input type="time" id="start-time" required>
+            <input type="time" id="end-time" required>
+            <button type="submit">
+                <i class="fa-solid fa-plus"></i> Thêm
+            </button>
+        </form>
+        <div class="table-container card">
+            <table id="timetable">
+                <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>Môn học/Công việc</th>
+                        <th>Ngày</th>
+                        <th>Bắt đầu</th>
+                        <th>Kết thúc</th>
+                        <th>Xóa</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <footer>
+         2025 - Thời gian biểu của bạn | Code by Tuấn Khang.
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
